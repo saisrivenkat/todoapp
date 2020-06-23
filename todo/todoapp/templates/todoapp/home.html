@@ -1,0 +1,32 @@
+{% extends 'todoapp/index.html' %}
+{% block content %}
+
+        <form action="create/" class="form-inline mb-3" method="POST">
+
+
+
+
+                <input type="text" class=" form-control col-8 mr-3" placeholder="Enter goal" name="title">
+
+                <button class="btn btn-outline-primary " type="button" id="button-addon2">Button</button>
+
+        </form>
+
+    </div>
+
+        <table class="table table-hover">
+
+            <tbody>
+                {% for goals in posts %}
+                <tr>
+
+                    <td >{{goals.goal}}</td>
+                    <td > <a href="{% url 'delete' goals.id %}  "><button type="button" class="btn btn-danger ">Delete</button> </td></a>
+
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+{%  endblock content %}
