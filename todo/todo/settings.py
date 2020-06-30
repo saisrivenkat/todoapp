@@ -23,9 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'kelrq=*ac8h7jo(f)wsa*3vaaoup*t$sxg_!+l7rfe)-s4$04y'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['127.0.0.1','django-todoapp1.herokuapp.com']
 
 
 # Application definition
